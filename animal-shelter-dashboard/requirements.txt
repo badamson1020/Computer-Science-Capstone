@@ -1,0 +1,21 @@
+# Animal Shelter Dashboard Dependencies
+# Install all dependencies with: pip install -r requirements.txt
+# Developed with Python 3.14
+
+# Core dashboard framework
+dash==4.1.0
+
+# Interactive map component for geolocation display
+dash-leaflet==1.1.3
+
+# Data visualization for pie charts
+plotly==6.7.0
+
+# Data manipulation and DataFrame operations
+pandas==3.0.3
+
+# MongoDB database driver
+pymongo==4.17.0
+
+# Environment variable management for secure credential handling
+python-dotenv==1.2.2

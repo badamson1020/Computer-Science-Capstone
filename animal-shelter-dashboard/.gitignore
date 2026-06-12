@@ -1,0 +1,15 @@
+# Private credentials, never commit to public repositories
+.env
+
+# Private test credentials, never commit to public repositories
+.env.test
+
+# Virtual environment
+.venv/
+
+# PyCharm project files
+.idea/
+
+# Python cache files
+__pycache__/
+*.pyc
