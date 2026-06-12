@@ -79,13 +79,26 @@ so that if one credential is ever exposed the other database is unaffected.
 
 ### 3. Import the sample dataset
 
-Import the provided CSV into both databases so the app and test suite have data to work with:
+Use MongoDB Compass's import wizard, which allows column types to be set
+before the import completes:
 
-```bash
-mongoimport --db AAC --collection animals --type csv --headerline --file data/aac_shelter_outcomes.csv --authenticationDatabase AAC -u aacuser -p choose_a_strong_password
+1. In Compass, navigate to the `AAC` database and create (or open) the `animals` collection.
+2. Click **Import Data**, select `data/aac_shelter_outcomes.csv`, and choose **CSV** as the input file type.
+3. On the field preview screen, set the following column types before importing:
 
-mongoimport --db AAC_Test --collection animals --type csv --headerline --file data/aac_shelter_outcomes.csv --authenticationDatabase AAC_Test -u aacuser -p choose_a_different_strong_password
-```
+   | Field | Type |
+   |---|---|
+   | `rec_num` | Int32 |
+   | `date_of_birth` | Date |
+   | `location_lat` | Double |
+   | `location_long` | Double |
+   | `age_upon_outcome_in_weeks` | Double |
+
+   All other fields (`animal_id`, `animal_type`, `breed`, `color`, `datetime`,
+   `monthyear`, `name`, `outcome_subtype`, `outcome_type`, `sex_upon_outcome`,
+   `age_upon_outcome`) should remain as **String**.
+
+4. Complete the import, then repeat the same process for the `AAC_Test` database.
 
 ### 4. Configure environment variables
 
@@ -127,9 +140,9 @@ python -m unittest discover tests
 
 The application follows a Model-View-Controller pattern:
 
-- **Model** &mdash; `models/shelter_crud.py` (data access) and `models/algorithm.py` (business logic)
-- **View** &mdash; `layout.py`, defining the dashboard's structure and components
-- **Controller** &mdash; `callbacks.py`, handling interactivity and coordinating between the model and view
+- **Model** — `models/shelter_crud.py` (data access) and `models/algorithm.py` (business logic)
+- **View** — `layout.py`, defining the dashboard's structure and components
+- **Controller** — `callbacks.py`, handling interactivity and coordinating between the model and view
 
 `config.py` holds shared constants, the database connection, and the aggregation
 pipeline definition used by the statistics panel, and is imported by both
