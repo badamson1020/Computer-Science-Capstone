@@ -9,7 +9,7 @@ View the full ePortfolio, including enhancement narratives, side-by-side code co
 - `enhanced-animal-shelter-dashboard/` &mdash; the animal shelter dashboard after both enhancement two and enhancement three
 - `enhanced-java-to-python-translation/` &mdash; the Python translation of the original Java project, enhancement one
 - `original-animal-shelter-dashboard/` &mdash; the original, pre-enhancement version of the shelter dashboard
-- `original-java-to-python/` &mdash; the original Java version
+- `original-java-to-python/` &mdash; the original Java version 
 
 ## Enhancements
 
