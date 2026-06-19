@@ -1,4 +1,4 @@
-# Animal Shelter Dashboard
+# Enhanced Animal Shelter Dashboard
 
 A Dash web application for Grazioso Salvare to search and rank shelter dogs
 for search-and-rescue training candidacy, built on a MongoDB backend.
