@@ -1,4 +1,4 @@
-# Java to Python Translation
+# Java to Python Translation (Enhanced Python Version)
 
 A translation of a Java JUnit testing project (Task, Contact, and Appointment
 management) into Python, following the Service-Repository layered architecture
