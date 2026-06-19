@@ -15,7 +15,7 @@ for search-and-rescue training candidacy, built on a MongoDB backend.
 ## Project Structure
 
 ```
-animal-shelter-dashboard/
+enhanced-animal-shelter-dashboard/
 ├── app.py                  # Entry point
 ├── config.py                # Shared constants, database connection, aggregation pipeline
 ├── layout.py                 # Dashboard layout (View)
