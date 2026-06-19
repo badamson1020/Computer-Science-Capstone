@@ -15,7 +15,14 @@ This project follows a Service-Repository layered architecture. The model classe
 
 ## A Note on Running This Version
 
-This project was built in Eclipse using JUnit 5, added directly as an Eclipse-managed library rather than through a build tool like Maven or Gradle. It targets Java 23 and uses two separate source folders, `src` for the model and service classes, and `Test` for the JUnit test classes. The project also references Lombok as an external library, though its usage was inconsistent across the original codebase, only some files used the `@EqualsAndHashCode` annotation it provides, which was one of the inconsistencies addressed in the Python translation. To run this version, import it into Eclipse as an existing project and ensure JUnit 5 is available on the build path.
+This project was built in Eclipse using JUnit 5, added directly as an 
+Eclipse-managed library rather than through a build tool like Maven or 
+Gradle. It targets Java 23. The project also references Lombok as an 
+external library, though its usage was inconsistent across the original 
+codebase, only some files used the `@EqualsAndHashCode` annotation it 
+provides, which was one of the inconsistencies addressed in the Python 
+translation. To run this version, import the files into a new Eclipse 
+project and ensure JUnit 5 is available on the build path.
 
 ## What Changed
 
