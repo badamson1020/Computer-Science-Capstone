@@ -14,10 +14,16 @@ View the full ePortfolio, including enhancement narratives, side-by-side code co
 ## Enhancements
 
 ### Enhancement One: Software Engineering and Design
-A Java task-management system, originally built for CS 320: Software Testing, Automation, and Quality Assurance, was translated into Python while preserving and strengthening its original Service-Repository layered architecture. The translation addressed inconsistencies in the original implementation, including incomplete defensive copying, and added PEP 257 compliant documentation throughout.
+The original artifact is a Java task-management system built for CS 320: Software Testing, Automation, and Quality Assurance,
+implementing task, contact, and appointment tracking through a layered 
+architecture with full JUnit test coverage. For the capstone, this project 
+was translated into Python while preserving and strengthening
+its original Service-Repository layered architecture. The translation addressed inconsistencies in the original implementation, including incomplete defensive copying, and added PEP 257 compliant documentation throughout.
 
 ### Enhancement Two: Algorithms and Data Structures
-The animal shelter dashboard's binary search filter, originally built for CS 340: Client/Server Development, was replaced with a weighted multi-criteria matching algorithm that scores rescue dog candidates from 0 to 100 across breed, sex, and age. Building this required managing real algorithmic trade-offs, including calibrating the minimum score threshold through testing. This enhancement also addressed several security gaps, including hardcoded database credentials and inconsistent input validation.
+The original artifact is a Python web dashboard built for CS 340: Client/Server Development, allowing 
+a fictional search-and-rescue training organization to browse and filter 
+shelter dogs by breed, sex, and age. For the capstone, the dashboard's  binary search filter, was replaced with a weighted multi-criteria matching algorithm that scores rescue dog candidates from 0 to 100 across breed, sex, and age. Building this required managing real algorithmic trade-offs, including calibrating the minimum score threshold through testing. This enhancement also addressed several security gaps, including hardcoded database credentials and inconsistent input validation.
 
 ### Enhancement Three: Databases
 Building on the same animal shelter dashboard, a MongoDB aggregation pipeline was added to calculate shelter statistics directly at the database level, and the application was restructured into a production-style multi-file MVC architecture. 
